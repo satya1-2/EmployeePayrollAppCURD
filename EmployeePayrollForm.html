@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Droid+Sans"
+    />
+    <script
+      src="https://kit.fontawesome.com/b0f9d4c086.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Employee Payroll Form</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-logo">
+        <img src="images/empicon.png" alt="" width="30" />
+      </div>
+      <div class="header-text">
+        <span>Employee</span>
+        <span>Payroll</span>
+      </div>
+    </header>
+    <section class="form-section">
+      <div class="form-container">
+        <form action="" onsubmit="save()">
+          <h1 class="form-h1">Employee Payroll Form</h1>
+          <div class="mob-width row-content">
+            <label id="name-label" for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name..."
+            />
+            <small id="errormsg"
+              >Enter 1st character in uppercase, min 3 character</small
+            >
+          </div>
+          <!-- Profile image -->
+          <div class="mob-width row-content">
+            <label id="profile-label" for="profile">Profile image:</label>
+            <div class="profile-radio-content">
+              <label>
+                <input
+                  type="radio"
+                  name="profile"
+                  id="profile1"
+                  value="images/profile1.png"
+                />
+                <img
+                  src="images/profile1.png"
+                  class="profile"
+                  id="profile1"
+                  alt=""
+                />
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="profile"
+                  id="profile1"
+                  value="images/profile2.png"
+                />
+                <img
+                  src="images/profile2.png"
+                  class="profile"
+                  id="profile2"
+                  alt=""
+                />
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="profile"
+                  id="profile1"
+                  value="images/profile3.png"
+                />
+                <img
+                  src="images/profile3.png"
+                  class="profile"
+                  id="profile3"
+                  alt=""
+                />
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="profile"
+                  id="profile1"
+                  value="images/profile4.png"
+                />
+                <img
+                  src="images/profile4.png"
+                  class="profile"
+                  id="profile4"
+                  alt=""
+                />
+              </label>
+            </div>
+          </div>
+          <!-- for gender -->
+          <div class="mob-width row-content">
+            <label id="profile-label" for="gender">Gender:</label>
+            <div class="gender-row-content inner-content">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male" class="text">Male</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female" class="text">Female</label>
+            </div>
+          </div>
+          <!-- for department -->
+          <div class="mob-width row-content">
+            <label id="profile-label" for="department">Department:</label>
+            <div class="department-row-content">
+              <div class="inner-content">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="hr"
+                  id="hr"
+                  value="hr"
+                />
+                <label for="hr" class="text">Hr</label>
+              </div>
+              <div class="inner-content">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="sales"
+                  id="sales"
+                  value="sales"
+                />
+                <label for="sales" class="text">Sales</label>
+              </div>
+              <div class="inner-content">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="finance"
+                  id="finance"
+                  value="finance"
+                />
+                <label for="finance" class="text">Finance</label>
+              </div>
+              <div class="inner-content">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="engineer"
+                  id="engineer"
+                  value="engineer"
+                />
+                <label for="engineer" class="text">Engineer</label>
+              </div>
+              <div class="inner-content">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="others"
+                  id="others"
+                  value="others"
+                />
+                <label for="others" class="text">Others</label>
+              </div>
+            </div>
+          </div>
+          <!-- Salary -->
+          <div class="mob-width row-content">
+            <label id="profile-label" for="salary">Choose your salary:</label>
+            <input
+              type="range"
+              name="salary"
+              id="salary"
+              min="30000"
+              max="60000"
+              step="500"
+              value="40000"
+            />
+            <span class="salary-output text" for="salary">40000</span>
+          </div>
+          <!-- Start date -->
+          <div class="mob-width row-content">
+            <label id="profile-label" for="startdate">Start date:</label>
+            <select name="day" id="day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <select name="month" id="month">
+              <option value="jan">January</option>
+              <option value="feb">Febuary</option>
+              <option value="mar">March</option>
+              <option value="apr">April</option>
+              <option value="may">May</option>
+              <option value="jun">June</option>
+              <option value="jul">July</option>
+              <option value="aug">August</option>
+              <option value="sep">September</option>
+              <option value="oct">October</option>
+              <option value="nov">November</option>
+              <option value="dec">December</option>
+            </select>
+            <select name="year" id="year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+          <div class="mob-width row-content">
+            <label id="profile-label" for="notes">Notes:</label>
+            <textarea name="notes" id="notes" style="width: 100px"></textarea>
+          </div>
+          <div class="buttonParent">
+            <button class="cancel button">
+              <a
+                href=".\EmployeePayrollApp.html"
+                style="display: block; text-decoration: none"
+                >Cancel</a
+              >
+            </button>
+            <div class="submit-reset">
+              <input
+                type="submit"
+                class="submitbutton button"
+                value="Submit"
+                onclick="parent.location='EmployeePayrollApp.html'"
+              />
+
+              <button
+                type="reset"
+                class="resetbutton button"
+                onclick="reset();"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script src="Modify.js"></script>
+</html>

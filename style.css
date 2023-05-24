@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5e8;
+}
+.header-container {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Droid Sans', serif;
+  font-weight: bold;
+  background-color: #f7f9ba;
+  gap: 5px;
+}
+
+.header-logo {
+  width: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 30px;
+}
+.form-h1 {
+  font-size: 14px;
+  font-family: 'Droid Sans', serif;
+}
+.row-content {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  align-items: center;
+  font-size: 13px;
+}
+form label {
+  min-width: 140px;
+  font-family: 'Droid Sans', serif;
+  padding: 12px 12px 12px 0;
+}
+.name-label {
+  display: inline-block;
+}
+#name {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid rgb(22, 21, 21);
+  border-style: none;
+  outline: 0;
+  background-color: #eaf6fb;
+}
+#name:focus-visible {
+  outline: 0;
+  border-style: solid;
+}
+#errormsg {
+  visibility: hidden;
+  color: red;
+}
+.profile {
+  width: 40px;
+}
+#profile-label {
+  vertical-align: center;
+  align-items: center;
+}
+.profile-radio-content {
+  display: flex;
+  flex-direction: row;
+}
+.profile-radio-content > label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+}
+.gender-row-content {
+  vertical-align: middle;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+.department-row-content {
+  display: flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  letter-spacing: 0;
+  background-color: transparent;
+}
+.buttonParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.button {
+  padding: 7px 7px;
+  background: transparent;
+  border: none;
+  font-family: 'Droid Sans', serif;
+  font-weight: 400;
+  border: 1px solid #000000;
+}
+@media screen and (max-width: 800px) {
+  .mob-width {
+    width: 100%;
+    display: block;
+  }
+  #name {
+    box-sizing: border-box;
+  }
+  .profile-radio-content {
+    flex-wrap: wrap;
+  }
+}
